@@ -35,11 +35,11 @@
                         </div>
                         <div class="campos-input">
                             <p class="texto-formulario">Ingresa tu matrícula</p>
-                            <input class="input-formulario" type="text" name="matricula" required>
-                            
+                            <input class="input-form" type="text" name="matricula" required>
+                            <br>
                             <p class="texto-formulario">Ingresa tu nombre</p>
                             <input class="input-formulario" type="text" name="nombre" required>
-                            
+                            <br>
                             <p class="texto-formulario">Ingresa tu carrera</p>
                             <input class="input-formulario" type="text" name="carrera" required>
                         </div>
