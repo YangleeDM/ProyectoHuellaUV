@@ -9,16 +9,19 @@ html {
 }
 
 body{
-    background-color: white;
+    background-color:white;
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
-
+     
 }
-
+#fileOutput{
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 
 /**Globales**/
 h1,h2,h3{
@@ -36,23 +39,126 @@ img{
     background-color: white;
     width: 85%;
     border-radius: 1rem;
-    
-
+    paadin
 }
 
+.columna-una{
+    display: flex;
+    flex-direction: column;
+}
+
+.ultimo{
+    order: 2;
+    margin-top: 1rem;
+}
+
+.contenedor-imagen{
+    order: 1;
+    margin: 0 auto;
+}
+
+.campos-input{
+    order: 3;
+}
 
 @media (min-width: 998px) {
     .contenedor{
         height: 800px;
     }
+
+    .formulario{
+        text-align: left;
+    }
+
+    .columna-una{
+        
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .campos-input{
+        flex: 2;
+        padding: 0 2rem ;
+    }
+
+    .ultimo{
+        order: 3;
+        margin-top: 1rem;
+    }
+    
+    .contenedor-imagen{
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    .campos-input{
+        order: 2;
+    }
+
+    
+}
+
+
+.campos-input{
+    margin-top: 2rem;
+}
+
+
+#fileInput{
+    margin-top: 2rem;
+    
 }
 
 @media only screen and (min-width: 1400px) {
     .contenedor{
         max-width: 1200px;
-        height: 10000px;
+        height: 1000px;
+    }
+
+    .formulario{
+        text-align: left;
+    }
+
+    .columna-una{
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .campos-input{
+        flex: 2;
+        padding: 0 2rem ;
+        margin-top: 0;
+    }
+
+    .fila-dos{
+        margin-top: 2rem;
+    }
+
+    #fileInput{
+        margin-top: 1rem;
+        flex: 0 0  calc(100%);
+        
+    }
+
+    .ultimo{
+        order: 3;
+        margin-top: 1rem;
+    }
+    
+    .contenedor-imagen{
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    .campos-input{
+        order: 2;
     }
 }
+
+
+
 
 
 img{
@@ -63,10 +169,6 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
 
 }
 
@@ -136,7 +238,7 @@ img{
 /*FORMULARIO*/
 .formulario{
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 3rem;
 }
 
 .formulario h2{
@@ -151,6 +253,8 @@ img{
     }
 }
 
+
+
 label{
     margin-top: auto;
     text-align: left;
@@ -159,9 +263,8 @@ label{
 }
 
 
-
 .texto-formulario{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     margin: auto;
     font-weight: bold;
@@ -184,8 +287,20 @@ label{
 }
 
 .titulo{
-    padding: 30px;
+    padding: 10px;
     color: rgb(18, 0, 82);
+}
+
+@media (min-width: 998px) {
+    .titulo{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .titulo{
+        padding: 20px;
+    }
 }
 
 @media (min-width: 998px) {
@@ -216,7 +331,6 @@ label{
     display: flex;
     align-items: center;
 }
-
 
 .info{
     letter-spacing: 0.1em;
@@ -373,4 +487,24 @@ a{
     width: 80%;
     display: flex;
     margin: 1rem auto;
+}
+
+
+
+
+.contenedor-imagen{
+    width: 150px;
+    height: 150px;
+    display: inline-block;  
+    border-radius: 50%;
+}
+
+.contenedor-imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.formulario input.input-formulario{
+    font-size: 2.3rem;
 }
